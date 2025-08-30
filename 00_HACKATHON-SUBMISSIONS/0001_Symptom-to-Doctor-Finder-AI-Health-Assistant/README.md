@@ -78,9 +78,9 @@ We've created the world's first **AI-powered health assistant with immersive 3D 
    ```bash
    cp .env.example .env.local
    ```
-   Add your OpenAI API key to `.env.local`:
+   Configure Ollama in `.env.local`:
    ```
-   OPENAI_API_KEY=your_openai_api_key_here
+   OLLAMA_BASE_URL=http://localhost:11434
    ```
 
 4. **Run the development server**
@@ -88,7 +88,7 @@ We've created the world's first **AI-powered health assistant with immersive 3D 
    npm run dev
    ```
 
-5. **Open your browser**
+5. **Start your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 🛠️ **Technical Innovation & Architecture**
@@ -108,7 +108,7 @@ We've created the world's first **AI-powered health assistant with immersive 3D 
 - **Performance Optimization** with efficient rendering and memory management
 
 ### **AI & Machine Learning**
-- **OpenAI GPT-4** for natural language processing and medical analysis
+- **Ollama llama3.2:1b** as primary AI model with intelligent fallback
 - **Structured Prompting** for consistent, reliable medical responses
 - **Error Handling** with intelligent fallback analysis systems
 - **Rate Limiting** and API optimization for scalability
@@ -193,7 +193,7 @@ We've created the world's first **AI-powered health assistant with immersive 3D 
 - Particle systems and lighting effects
 
 ### AI Analysis
-- `symptom-analysis/route.ts` - OpenAI integration
+- `symptom-analysis/route.ts` - Ollama integration
 - Intelligent prompt engineering
 - Structured response parsing
 
@@ -206,7 +206,7 @@ We've created the world's first **AI-powered health assistant with immersive 3D 
 
 ### Environment Variables
 ```env
-OPENAI_API_KEY=your_openai_api_key_here
+OLLAMA_BASE_URL=http://localhost:11434
 ```
 
 ### Customization
@@ -287,7 +287,7 @@ npm start
 ### **Innovation Leadership**
 - **Pioneering 3D Healthcare Interfaces** setting new industry standards
 - **Advanced AI Integration** pushing boundaries of medical AI applications
-- **Open Source Potential** benefiting broader healthcare technology community
+- **Local AI Processing** benefiting privacy and data security
 - **Future-Ready Architecture** prepared for emerging technologies
 
 ## 🤝 **Contributing & Community**
@@ -310,7 +310,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- OpenAI for GPT API
+- Ollama for local AI processing
 - Three.js community for 3D graphics
 - React Three Fiber team
 - Next.js team for the amazing framework
@@ -362,7 +362,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Secure API Communications**: All data transmission encrypted with industry-standard protocols
 - **User Privacy First**: No tracking or data collection beyond essential functionality
 
-### **Open Source License**
+### **MIT License**
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
